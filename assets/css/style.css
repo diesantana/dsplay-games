@@ -1,0 +1,25 @@
+:root {
+  --mint-green-color: #38af90;
+  --dusty-rose-color: #dd7e92;
+  --light-gray-color: #f0f0f0;
+  --medium-gray-color: #797979;
+  --white-color: #fff;
+  --black-color: #383838;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: var(--white-color);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
