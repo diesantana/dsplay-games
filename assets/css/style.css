@@ -7,6 +7,8 @@
   --black-color: #383838;
 }
 
+/* Global styles ------------------------------------------------------------- */
+
 * {
   margin: 0;
   padding: 0;
@@ -39,6 +41,42 @@ h2 {
   margin: 0 auto;
 }
 
+.btn {
+  border: none;
+  background-color: transparent;
+}
+
+.btn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15.25rem;
+  height: 4.188rem;
+  border-radius: 8px;
+  font-size: 1.125rem;
+  font-weight: 700;
+  transition: transform 0.4s ease;
+}
+
+.btn a:hover {
+  transform: scale(1.1);
+}
+
+.primary-btn a {
+  background-color: var(--dusty-rose-color);
+  color: var(--white-color);
+}
+
+.secondary-btn a {
+  background-color: var(--white-color);
+  color: var(--dusty-rose-color);
+  border: 2px solid var(--dusty-rose-color);
+}
+
+.secondary-btn a {
+  color: var(--dusty-rose-color);
+}
+
 /* header style ------------------------------------------------------------------------------------- */
 
 header {
@@ -47,7 +85,7 @@ header {
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
-  margin-bottom: 0.375rem; /* garante que o box-shadow esteja visíveç */
+  margin-bottom: 0.375rem; /* garante que o box-shadow esteja visíve */
 }
 
 .header-wrapper {
@@ -84,10 +122,11 @@ header {
 .list-item {
   font-size: 0.875rem;
   font-weight: 500;
+  transition: transform 0.4s ease;
 }
 
-.list-link:hover {
-  color: var(--light-gray-color);
+.list-item:hover {
+  transform: scale(1.1);
 }
 
 /* news section style ------------------------------------------------------------------------------------- */
@@ -99,6 +138,7 @@ header {
 .news-wrapper {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 0.5rem; /* gap de 8px */
 }
 
@@ -122,6 +162,42 @@ header {
   color: var(--mint-green-color);
   font-size: 1rem;
   width: 100%;
+}
+
+.card-subtitle {
+  font-size: 0.75rem;
+  color: var(--medium-gray-color);
+  margin-bottom: 0.188rem;
+}
+
+.card-divisor {
+  height: 2px;
+  background-color: var(--mint-green-color);
+  border: 1px solid var(--mint-green-color);
+  margin-bottom: 0.313rem;
+}
+
+.card-date {
+  color: var(--mint-green-color);
+  font-weight: 400;
+  font-size: 0.625rem;
+  margin-bottom: 0.75rem;
+}
+
+.card-text {
+  color: var(--medium-gray-color);
+  font-size: 0.625rem;
+  margin-bottom: 0.75rem;
+}
+
+.read-more {
+  color: var(--dusty-rose-color);
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.read-more:hover {
+  text-decoration: underline;
 }
 
 /* Responsividade ----------------------------------------------------------------------------------------- */
