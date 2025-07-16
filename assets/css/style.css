@@ -259,6 +259,59 @@ header {
   font-weight: 700;
 }
 
+/* subscribe section ----------------------------------------------------------------------------------------- */
+.subscribe-section {
+  background-color: var(--white-color);
+  padding: 2.5rem 0.75rem;
+}
+
+.subscribe-title {
+  color: var(--medium-gray-color);
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.subscribe-form {
+  background-color: var(--light-gray-color);
+  color: var(--medium-gray-color);
+  border-radius: 8px;
+  padding: 3.25rem 0.5rem 2rem 0.5rem;
+}
+
+.input-group {
+  margin-bottom: 1.25rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.813rem 1rem;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid var(--medium-gray-color);
+  font-size: 1rem;
+}
+
+.input-group input::placeholder {
+  color: #cacaca;
+  font-size: 1rem;
+}
+
+.input-options {
+  margin-bottom: 2.188rem;
+}
+
+.input-group-newsletter {
+  margin-bottom: 2.75rem;
+}
+
+.form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
 /* Responsividade ----------------------------------------------------------------------------------------- */
 @media screen and (min-width: 768px) {
   /* Global styles */
@@ -309,12 +362,32 @@ header {
 
   /* Games section */
   .games-title {
-    font-size: 2.25rem;
     margin-bottom: 4.563rem;
   }
 
   .games-section {
     background-color: var(--light-gray-color);
     padding: 2.25rem 1rem 4.375rem 1rem;
+  }
+
+  /* Subscribe section */
+  .subscribe-title {
+    margin-bottom: 2.5rem;
+  }
+
+  .subscribe-form {
+    padding: 3.25rem 4.5rem;
+  }
+
+  .input-options {
+    margin-bottom: 1.875rem;
+  }
+
+  .input-group-newsletter {
+    margin-bottom: 2.375rem;
+  }
+
+  .form-actions {
+    gap: 3.25rem;
   }
 }
