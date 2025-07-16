@@ -183,6 +183,66 @@
           </div>
         </div>
       </section>
+
+      <!-- subscribe section ------------------------------------------------------------------------  -->
+      <section class="subscribe-section" id="subscribe">
+        <div class="container subscribe-wrapper">
+          <h2 class="subscribe-title">Faça sua inscrição</h2>
+
+          <form action="#" class="subscribe-form">
+            <div class="input-group">
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="Nome completo"
+                required
+              />
+            </div>
+
+            <div class="input-group">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                required
+              />
+            </div>
+
+            <div class="input-options">
+              <p>Qual sua plataforma preferida?</p>
+              <input type="radio" name="plarform" id="pc" value="pc" required />
+              <label for="pc">PC</label>
+
+              <input type="radio" name="plarform" id="xbox" value="xbox" />
+              <label for="xbox">Xbox</label>
+
+              <input
+                type="radio"
+                name="plarform"
+                id="playstation"
+                value="Playstation"
+              />
+              <label for="playstation">Playstation</label>
+            </div>
+
+            <div class="input-group-newsletter">
+              <input type="checkbox" name="newsletter" id="newsletter" />
+              <label for="newsletter">Desejo receber novidades.</label>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn primary-btn">
+                <a href="#">Enviar</a>
+              </button>
+              <button type="reset" class="btn secondary-btn">
+                <a href="#">Limpar</a>
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
   </body>
 </html>
