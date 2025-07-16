@@ -29,18 +29,25 @@ ul {
   list-style: none;
 }
 
-header {
-  background-color: var(--mint-green-color);
-  color: var(--white-color);
-  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+h2 {
+  font-size: 1.5rem;
 }
 
 .container {
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
+}
+
+/* header style ------------------------------------------------------------------------------------- */
+
+header {
+  background-color: var(--mint-green-color);
+  color: var(--white-color);
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  margin-bottom: 0.375rem; /* garante que o box-shadow esteja visíveç */
 }
 
 .header-wrapper {
@@ -83,7 +90,41 @@ header {
   color: var(--light-gray-color);
 }
 
-/* Responsividade --------------------------- */
+/* news section style ------------------------------------------------------------------------------------- */
+.news-section {
+  background-color: var(--white-color);
+  padding: 2.5rem 0.625rem;
+}
+
+.news-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem; /* gap de 8px */
+}
+
+.news-title {
+  color: var(--medium-gray-color);
+  width: 100%;
+  text-align: center;
+}
+
+.news-card {
+  background-color: var(--light-gray-color);
+  border-radius: 8px;
+  padding: 1rem 0.75rem 0.75rem 0.75rem; /* 16px em cima e 12px no restante */
+  margin-bottom: 1.25rem;
+  box-shadow: 0px 4px 5px 0px rgba(121, 121, 121, 0.75);
+  -webkit-box-shadow: 0px 4px 5px 0px rgba(121, 121, 121, 0.75);
+  -moz-box-shadow: 0px 4px 5px 0px rgba(121, 121, 121, 0.75);
+}
+
+.card-title {
+  color: var(--mint-green-color);
+  font-size: 1rem;
+  width: 100%;
+}
+
+/* Responsividade ----------------------------------------------------------------------------------------- */
 @media screen and (min-width: 768px) {
   .header-wrapper {
     padding: 0.875rem 6.563rem;
