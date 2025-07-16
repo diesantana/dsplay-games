@@ -83,10 +83,11 @@ header {
   color: var(--light-gray-color);
 }
 
+/* Responsividade --------------------------- */
 @media screen and (min-width: 768px) {
   .header-wrapper {
     padding: 0.875rem 6.563rem;
-    gap: 1rem;
+    gap: 1.813rem;
   }
 
   .header-title {
@@ -94,7 +95,7 @@ header {
   }
 
   .header-img {
-    order: 1;
+    order: 1; /* Altera a ordem padrão dos elementos no HTML */
     margin: 0;
   }
 
