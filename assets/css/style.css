@@ -157,33 +157,33 @@ header {
   -moz-box-shadow: 0px 4px 5px 0px rgba(121, 121, 121, 0.75);
 }
 
-.card-title {
+.news-card-title {
   color: var(--mint-green-color);
   font-size: 1rem;
   width: 100%;
 }
 
-.card-subtitle {
+.news-card-subtitle {
   font-size: 0.75rem;
   color: var(--medium-gray-color);
   margin-bottom: 0.188rem;
 }
 
-.card-divisor {
+.news-card-divisor {
   height: 2px;
   background-color: var(--mint-green-color);
   border: 1px solid var(--mint-green-color);
   margin-bottom: 0.313rem;
 }
 
-.card-date {
+.news-card-date {
   color: var(--mint-green-color);
   font-weight: 400;
   font-size: 0.625rem;
   margin-bottom: 0.75rem;
 }
 
-.card-text {
+.news-card-text {
   color: var(--medium-gray-color);
   font-size: 0.625rem;
   margin-bottom: 0.75rem;
@@ -197,6 +197,66 @@ header {
 
 .read-more:hover {
   text-decoration: underline;
+}
+
+/* Games section ----------------------------------------------------------------------------------------- */
+.games-section {
+  background-color: var(--light-gray-color);
+  padding: 2.5rem 0.625rem;
+}
+
+.games-title {
+  color: var(--mint-green-color);
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1.75rem;
+}
+
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.688rem;
+}
+
+.games-card {
+  border-radius: 8px;
+  background-color: var(--white-color);
+  overflow: hidden;
+  box-shadow: 0px 6px 12px 0px rgba(113, 113, 113, 0.75);
+  -webkit-box-shadow: 0px 6px 12px 0px rgba(113, 113, 113, 0.75);
+  -moz-box-shadow: 0px 6px 12px 0px rgba(113, 113, 113, 0.75);
+}
+
+.games-card-img {
+  width: 100%;
+}
+
+.games-text-box {
+  /* 30 px em cima 40px laterais e 15px em baixo*/
+  padding: 1.875rem 2.5rem 0.938rem 2.5rem;
+  text-align: center;
+}
+
+.games-card-title {
+  font-size: 1.125rem;
+  color: var(--medium-gray-color);
+}
+
+.games-card-subtitle {
+  color: var(--medium-gray-color);
+  font-size: 0.875rem;
+  margin-bottom: 0.875rem;
+}
+
+.games-card-subtitle .highlighted-text {
+  color: var(--mint-green-color);
+  font-weight: 700;
+}
+
+.games-card-rating {
+  color: var(--mint-green-color);
+  font-size: 2.25rem;
+  font-weight: 700;
 }
 
 /* Responsividade ----------------------------------------------------------------------------------------- */
@@ -239,11 +299,22 @@ header {
     margin-bottom: 0;
   }
 
-  .card-title {
+  .news-card-title {
     font-size: 1.5rem;
   }
 
-  .card-subtitle {
+  .news-card-subtitle {
     font-size: 1rem;
+  }
+
+  /* Games section */
+  .games-title {
+    font-size: 2.25rem;
+    margin-bottom: 4.563rem;
+  }
+
+  .games-section {
+    background-color: var(--light-gray-color);
+    padding: 2.25rem 1rem 4.375rem 1rem;
   }
 }
