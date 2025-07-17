@@ -81,9 +81,9 @@ h2 {
 header {
   background-color: var(--mint-green-color);
   color: var(--white-color);
-  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 4px 5px 0px rgba(121, 121, 121, 0.75);
+  -webkit-box-shadow: 0px 4px 5px 0px rgba(121, 121, 121, 0.75);
+  -moz-box-shadow: 0px 4px 5px 0px rgba(121, 121, 121, 0.75);
   margin-bottom: 0.375rem; /* garante que o box-shadow esteja visíve */
 }
 
@@ -121,11 +121,10 @@ header {
 .list-item {
   font-size: 0.875rem;
   font-weight: 500;
-  transition: transform 0.4s ease;
 }
 
-.list-item:hover {
-  transform: scale(1.1);
+.list-item a:hover {
+  text-decoration: underline;
 }
 
 /* news section style ------------------------------------------------------------------------------------- */
@@ -301,6 +300,11 @@ header {
   margin-bottom: 2.188rem;
 }
 
+.input-options-group input,
+label {
+  cursor: pointer;
+}
+
 .input-group-newsletter {
   margin-bottom: 2.75rem;
 }
@@ -310,6 +314,26 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1.25rem;
+}
+
+/* Footer ----------------------------------------------------------------------------------------- */
+footer {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  padding: 2.188rem;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  gap: 2.188rem;
+}
+
+.footer-list-link:hover {
+  text-decoration: underline;
 }
 
 /* Responsividade ----------------------------------------------------------------------------------------- */
@@ -362,6 +386,7 @@ header {
 
   /* Games section */
   .games-title {
+    font-size: 2.25rem;
     margin-bottom: 4.563rem;
   }
 
@@ -389,5 +414,16 @@ header {
 
   .form-actions {
     gap: 3.25rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer-wrapper {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .footer-copyright {
+    align-content: center;
   }
 }
