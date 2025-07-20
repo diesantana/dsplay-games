@@ -18,6 +18,7 @@
 
 html {
   background-color: var(--white-color);
+  font-size: 16px;
 }
 
 a {
